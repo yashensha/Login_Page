@@ -1,0 +1,150 @@
+/* 
+mono purple : #30243e
+purple: #311847
+
+Gradient   #b7b7a4 */
+
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: linear-gradient(to top right, #494949, rgb(0, 0, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 9px;
+    flex-direction: column;
+    padding: 19px;
+    align-items: center;
+    width: 30rem;
+    height: 32rem;
+
+}
+
+h2 {
+    margin: 17px;
+    font-size: 36px;
+}
+
+.pages {
+    margin-top: 36px;
+}
+
+.box {
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.button-active {
+    text-decoration: none;
+    background-color: #571a8d;
+    color: rgb(238, 237, 237);
+    padding: 8px 69px;
+    border-radius: 6px;
+    margin: 5px;
+    font-size: 21px;
+
+}
+
+.button {
+    text-decoration: none;
+    background-color: #fff;
+    color: rgb(29, 29, 29);
+    padding: 8px 69px;
+    border-radius: 6px;
+    margin: 5px;
+    font-size: 21px;
+    border: 1px solid #494949;
+}
+
+.button:hover {
+    border-color: #571a8d;
+}
+
+
+
+input[type=submit] {
+
+    border: none;
+    text-decoration: none;
+
+}
+
+
+
+.input {
+    border: 1px solid rgb(34, 34, 34);
+    margin: 10px;
+    width: 440px;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 9px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.input:hover {
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 6px;
+
+}
+
+
+.input:focus {
+    outline: none;
+    border-color: #571a8d;
+
+}
+
+
+.box a {
+    text-decoration: none;
+    padding: 4px 10px;
+    color: #571a8d;
+}
+
+
+#button {
+    text-decoration: none;
+    background-color: #571a8d;
+    color: white;
+    padding: 8px 168px;
+    border-radius: 6px;
+    margin-top: 45px;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+
+}
+
+.quote a {
+    margin-left: -10px;
+}
