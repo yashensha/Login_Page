@@ -22,7 +22,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 424px; */
     width: 350px;
     padding: 20px;
     border-radius: 8px;
@@ -92,6 +91,10 @@ body {
     margin: 14px 0px;
     width: 100%;
 
+}
+
+#dob {
+    width: 100%;
 }
 
 .input-box input {
