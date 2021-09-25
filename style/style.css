@@ -1,118 +1,122 @@
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
-
- body {
-     background-image: linear-gradient(to right, #a647ad, #f7429b);
-     min-height: 100vh;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
- }
-
- .login-form {
-     background-color: #fff;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     height: 500px;
-     width: 350px;
-     padding: 20px;
-     border-radius: 8px;
-     margin: 40px;
- }
-
- .login-form h1 {
-     margin: 25px 0px;
-     font-size: 29px;
-
- }
-
- .login-signup-btn-tab {
-     display: flex;
-     justify-content: space-between;
-     width: 100%;
-     margin-top: 20px;
-
- }
-
- .login-signup-btn {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background-image: linear-gradient(to right, #a647ad, #f7429b);
-     border: none;
-     border-radius: 4px;
-     color: white;
-     height: 30px;
-     width: 100%;
- }
-
- .login-signup-btn:hover {
-     background-image: linear-gradient(to right, #e769f0, #f872b5);
-     cursor: pointer;
- }
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- .input-box {
-     display: flex;
-     flex-direction: column;
-     margin: 14px 0px;
-     width: 100%;
+body {
+    background-image: linear-gradient(to right, #a647ad, #f7429b);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
 
- }
+}
 
- .input-box input {
-     border: 1px #fa8fc4 solid;
-     border-radius: 4px;
-     margin-top: 13px;
-     height: 30px;
-     padding: 3px;
-     font-size: 14px;
+.login-form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 424px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 40px;
+}
 
- }
+.login-form h1 {
+    margin: 25px 0px;
+    font-size: 29px;
 
- .input-box input:focus {
-     outline: none;
-     border: 1px #f7429b solid;
-     box-shadow: #f7429d3f 0px 0px 2px 1px;
- }
+}
 
- .submit-btn {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background-image: linear-gradient(to right, #a647ad, #f7429b);
-     border: none !important;
-     border-radius: 4px;
-     color: white;
-     height: 30px;
-     width: 100%;
-     margin: 2px;
- }
+.login-signup-btn-tab {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
 
- .submit-btn:hover {
-     background-image: linear-gradient(to right, #e769f0, #f872b5);
-     cursor: pointer;
- }
+}
+
+.login-signup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #a647ad, #f7429b);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    height: 30px;
+    width: 100%;
+}
+
+.login-signup-btn:hover {
+    background-image: linear-gradient(to right, #e769f0, #f872b5);
+    cursor: pointer;
+}
 
 
- .links {
-     color: #f7429b;
-     text-decoration: none;
-     margin-top: 4px;
- }
 
- .links:hover {
-     cursor: pointer;
- }
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0px;
+    width: 100%;
 
- .login-form p {
+}
 
-     margin-top: 20px;
+.input-box input {
+    border: 1px #fa8fc4 solid;
+    border-radius: 4px;
+    margin-top: 13px;
+    height: 30px;
+    padding: 3px;
+    font-size: 14px;
 
- }
+}
+
+.input-box input:focus {
+    outline: none;
+    border: 1px #f7429b solid;
+    box-shadow: #f7429d3f 0px 0px 2px 1px;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #a647ad, #f7429b);
+    border: none !important;
+    border-radius: 4px;
+    color: white;
+    height: 30px;
+    width: 100%;
+    margin: 2px;
+}
+
+.submit-btn:hover {
+    background-image: linear-gradient(to right, #e769f0, #f872b5);
+    cursor: pointer;
+}
+
+
+.links {
+    color: #f7429b;
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+.links:hover {
+    cursor: pointer;
+}
+
+.login-form p {
+
+    margin-top: 20px;
+
+}
