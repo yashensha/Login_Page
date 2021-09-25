@@ -1,150 +1,118 @@
-/* 
-mono purple : #30243e
-purple: #311847
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-Gradient   #b7b7a4 */
+ body {
+     background-image: linear-gradient(to right, #a647ad, #f7429b);
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 
+ }
 
-* {
-    margin: 0px;
-}
+ .login-form {
+     background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 500px;
+     width: 350px;
+     padding: 20px;
+     border-radius: 8px;
+     margin: 40px;
+ }
 
-body {
-    background-image: linear-gradient(to top right, #494949, rgb(0, 0, 0));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+ .login-form h1 {
+     margin: 25px 0px;
+     font-size: 29px;
 
-}
+ }
 
-.container {
+ .login-signup-btn-tab {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     margin-top: 20px;
 
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    border-radius: 9px;
-    flex-direction: column;
-    padding: 19px;
-    align-items: center;
-    width: 30rem;
-    height: 32rem;
+ }
 
-}
+ .login-signup-btn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-image: linear-gradient(to right, #a647ad, #f7429b);
+     border: none;
+     border-radius: 4px;
+     color: white;
+     height: 30px;
+     width: 100%;
+ }
 
-h2 {
-    margin: 17px;
-    font-size: 36px;
-}
-
-.pages {
-    margin-top: 36px;
-}
-
-.box {
-    margin: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.button-active {
-    text-decoration: none;
-    background-color: #571a8d;
-    color: rgb(238, 237, 237);
-    padding: 8px 69px;
-    border-radius: 6px;
-    margin: 5px;
-    font-size: 21px;
-
-}
-
-.button {
-    text-decoration: none;
-    background-color: #fff;
-    color: rgb(29, 29, 29);
-    padding: 8px 69px;
-    border-radius: 6px;
-    margin: 5px;
-    font-size: 21px;
-    border: 1px solid #494949;
-}
-
-.button:hover {
-    border-color: #571a8d;
-}
+ .login-signup-btn:hover {
+     background-image: linear-gradient(to right, #e769f0, #f872b5);
+     cursor: pointer;
+ }
 
 
 
-input[type=submit] {
+ .input-box {
+     display: flex;
+     flex-direction: column;
+     margin: 14px 0px;
+     width: 100%;
 
-    border: none;
-    text-decoration: none;
+ }
 
-}
+ .input-box input {
+     border: 1px #fa8fc4 solid;
+     border-radius: 4px;
+     margin-top: 13px;
+     height: 30px;
+     padding: 3px;
+     font-size: 14px;
 
+ }
 
+ .input-box input:focus {
+     outline: none;
+     border: 1px #f7429b solid;
+     box-shadow: #f7429d3f 0px 0px 2px 1px;
+ }
 
-.input {
-    border: 1px solid rgb(34, 34, 34);
-    margin: 10px;
-    width: 440px;
-    height: 50px;
-    box-sizing: border-box;
-    padding-left: 9px;
-    border-radius: 6px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+ .submit-btn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-image: linear-gradient(to right, #a647ad, #f7429b);
+     border: none !important;
+     border-radius: 4px;
+     color: white;
+     height: 30px;
+     width: 100%;
+     margin: 2px;
+ }
 
-
-}
-
-.input:hover {
-    border: 1px solid rgb(78, 78, 78);
-    border-radius: 6px;
-
-}
-
-
-.input:focus {
-    outline: none;
-    border-color: #571a8d;
-
-}
-
-
-.box a {
-    text-decoration: none;
-    padding: 4px 10px;
-    color: #571a8d;
-}
+ .submit-btn:hover {
+     background-image: linear-gradient(to right, #e769f0, #f872b5);
+     cursor: pointer;
+ }
 
 
-#button {
-    text-decoration: none;
-    background-color: #571a8d;
-    color: white;
-    padding: 8px 168px;
-    border-radius: 6px;
-    margin-top: 45px;
-    font-size: 21px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-}
+ .links {
+     color: #f7429b;
+     text-decoration: none;
+     margin-top: 4px;
+ }
 
-.quote {
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
+ .links:hover {
+     cursor: pointer;
+ }
 
-}
+ .login-form p {
 
-.quote a {
-    margin-left: -10px;
-}
+     margin-top: 20px;
+
+ }

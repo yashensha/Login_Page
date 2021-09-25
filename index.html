@@ -5,29 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>Log In</title>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h2>Login Form</h2>
-        <div class="pages">
-            <a class="button-active" href="#">Login</a>
-            <a class="button" href="#">Signup</a>
+    <form class="login-form">
+        <h1>Login Form</h1>
+        <div class="login-signup-btn-tab">
+            <button class="login-signup-btn">Login</button>
+            <button class="login-signup-btn">Signup</button>
         </div>
-        <div class="box">
-            <form>
-                <input class="input" type="email" placeholder="Email Address" pattern=".+@gmail.com" required>
-                <input class="input" type="password" required placeholder="Password">
-                <a href="#">Forgot password?</a>
-                <input id="button" type="submit" placeholder="Login">
-                <div class="quote">
-                    <p>Not a member? <a href="#">Signup now.</a></p>
-                </div>
-            </form>
+
+        <div class="input-box">
+            <input type="email" required placeholder="Email Address">
+            <input type="password" placeholder="Password" required>
+            <a class="links" href="#">Forgot password?</a>
+            <input class="submit-btn" type="submit">
         </div>
-    </div>
+        <p>Not a member? <a class="links" href="#">Signup.</a></p>
+
+
+    </form>
 
 </body>
 
