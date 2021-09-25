@@ -13,19 +13,33 @@
     <form class="login-form">
         <h1>Login Form</h1>
         <div class="login-signup-btn-tab">
-            <button id="login-btn" class="login-signup-btn login-btn" onclick="toggleLoginSignUp('login')">Login
+            <button id="login-btn" class="login-signup-btn login-btn" onclick="toggleLoginSignUp('login')"
+                type="button">Login
             </button>
             <button id="signup-btn" class="login-signup-btn signup-btn login-signup-btn-deselected"
-                onclick="toggleLoginSignUp('signup')">Signup</button>
+                onclick="toggleLoginSignUp('signup')" type="button">Signup</button>
         </div>
 
-        <div class="input-box">
+        <div id="login-form" class="input-box">
             <input type="email" required placeholder="Email Address">
             <input type="password" placeholder="Password" required>
             <a class="links" href="#">Forgot password?</a>
             <input class="submit-btn" type="submit">
+            <p class="not-member">Not a member? <a class="links" href="#"
+                    onclick="toggleLoginSignUp('signup')">Signup.</a></p>
         </div>
-        <p>Not a member? <a class="links" href="#">Signup.</a></p>
+
+        <div style="display: none;" id="signup-form" class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input id="dob" type="date">
+            <label for="dob">Date of birth</label>
+            <input type="email" required placeholder="Email Address">
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <input class="submit-btn" type="submit">
+            <p class="not-member">Already a member? <a class="links" href="#"
+                    onclick="toggleLoginSignUp('login')">Login.</a></p>
+        </div>
 
 
     </form>
@@ -35,9 +49,14 @@
             if (btn === 'login') {
                 document.getElementById("signup-btn").classList.add("login-signup-btn-deselected")
                 document.getElementById("login-btn").classList.remove("login-signup-btn-deselected")
+                document.getElementById("signup-form").style.display = "none";
+                document.getElementById("login-form").style.display = "flex";
             } else if (btn === 'signup') {
                 document.getElementById("signup-btn").classList.remove("login-signup-btn-deselected")
                 document.getElementById("login-btn").classList.add("login-signup-btn-deselected")
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("signup-form").style.display = "flex";
+
             }
 
         }

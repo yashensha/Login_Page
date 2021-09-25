@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 424px;
+    /* height: 424px; */
     width: 350px;
     padding: 20px;
     border-radius: 8px;
@@ -80,6 +80,7 @@ body {
 
 .login-signup-btn:hover {
     background-image: linear-gradient(to right, #e769f0, #f872b5);
+    color: #fff;
     cursor: pointer;
 }
 
@@ -138,8 +139,12 @@ body {
     cursor: pointer;
 }
 
-.login-form p {
-
+.not-member {
     margin-top: 20px;
+    text-align: center;
+}
 
+label[for="dob"] {
+    font-size: 14px;
+    color: #f7429b;
 }
