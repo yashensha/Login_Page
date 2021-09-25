@@ -49,10 +49,33 @@ body {
     justify-content: center;
     background-image: linear-gradient(to right, #a647ad, #f7429b);
     border: none;
-    border-radius: 4px;
     color: white;
     height: 30px;
     width: 100%;
+}
+
+.login-btn {
+    border-radius: 4px 0 0 4px;
+}
+
+.signup-btn {
+    border-radius: 0 4px 4px 0;
+}
+
+.signup-btn.login-signup-btn-deselected {
+    border: 1px solid rgb(138, 137, 137);
+    border-left: 0;
+}
+
+.login-btn.login-signup-btn-deselected {
+    border: 1px solid rgb(138, 137, 137);
+    border-right: 0;
+}
+
+.login-signup-btn-deselected {
+    background-image: none;
+    background-color: #fff;
+    color: #000;
 }
 
 .login-signup-btn:hover {

@@ -13,8 +13,10 @@
     <form class="login-form">
         <h1>Login Form</h1>
         <div class="login-signup-btn-tab">
-            <button class="login-signup-btn">Login</button>
-            <button class="login-signup-btn">Signup</button>
+            <button id="login-btn" class="login-signup-btn login-btn" onclick="toggleLoginSignUp('login')">Login
+            </button>
+            <button id="signup-btn" class="login-signup-btn signup-btn login-signup-btn-deselected"
+                onclick="toggleLoginSignUp('signup')">Signup</button>
         </div>
 
         <div class="input-box">
@@ -27,6 +29,19 @@
 
 
     </form>
+
+    <script>
+        function toggleLoginSignUp(btn) {
+            if (btn === 'login') {
+                document.getElementById("signup-btn").classList.add("login-signup-btn-deselected")
+                document.getElementById("login-btn").classList.remove("login-signup-btn-deselected")
+            } else if (btn === 'signup') {
+                document.getElementById("signup-btn").classList.remove("login-signup-btn-deselected")
+                document.getElementById("login-btn").classList.add("login-signup-btn-deselected")
+            }
+
+        }
+    </script>
 
 </body>
 
